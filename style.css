@@ -1,0 +1,1214 @@
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#001f1a;
+    color:white;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:85px;
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(5px);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 50px;
+    z-index:1000;
+}
+
+.logo{
+    font-size:2.3rem;
+    font-weight:bold;
+    color:#c8ffd4;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    margin-right:80px;
+}
+
+.nav-links a{
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ======================
+   HERO SECTION
+====================== */
+
+.hero{
+    width:100%;
+    height:100vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url('images/wildlife.jpg');
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+    background:rgba(0,0,0,0.45);
+    padding:60px;
+    border-radius:25px;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    margin-bottom:25px;
+    color:#e0ffe7;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:40px;
+    line-height:1.8;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#4ade80;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:#22c55e;
+}
+
+/* ======================
+   ANIMALS PAGE
+====================== */
+
+.animals-page{
+    width:90%;
+    margin:auto;
+    padding-top:140px;
+    padding-bottom:100px;
+}
+
+.page-heading{
+    text-align:center;
+    font-size:4rem;
+    margin-bottom:70px;
+    color:#b7ffce;
+}
+
+.category-title{
+    font-size:2rem;
+    margin-top:70px;
+    margin-bottom:30px;
+    color:#a8e6b0;
+}
+
+/* ======================
+   GRID
+====================== */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+    margin-top:30px;
+}
+
+/* ======================
+   CARD
+====================== */
+
+.animal-card{
+    background:#0d3b2e;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
+
+.animal-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ======================
+   CARD IMAGE
+====================== */
+
+.animal-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    
+        transition: transform 0.5s ease;
+}
+
+.animal-card{
+    overflow: hidden;
+}
+
+.animal-card:hover img{
+    transform: scale(1.08);
+}
+/* ======================
+   ELEPHANT FIX
+====================== */
+
+.animal-card img[alt="Elephant"]{
+    object-fit:cover;
+    object-position:center;
+}
+
+/* ======================
+   EAGLE FIX
+====================== */
+
+.animal-card img[alt="Eagle"]{
+    object-fit:contain;
+    background:#0b2b24;
+    padding:10px;
+}
+
+/* ======================
+   CARD CONTENT
+====================== */
+
+.card-content{
+    padding:30px;
+}
+
+.card-content h3{
+    font-size:2rem;
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+.card-content p{
+    font-size:1rem;
+    line-height:1.7;
+    margin-bottom:25px;
+    color:#d7f5e0;
+}
+
+/* ======================
+   BUTTON
+====================== */
+
+.learn-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#4ade80;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.learn-btn:hover{
+    background:#22c55e;
+}
+
+/* ======================
+   ANIMAL DETAILS PAGE
+====================== */
+
+.animal-details{
+    width:90%;
+    margin:auto;
+    padding-top:110px;
+    padding-bottom:100px;
+}
+
+/* ======================
+   ANIMAL HERO
+====================== */
+
+.animal-hero{
+    width:100%;
+    margin-bottom:40px;
+}
+
+.animal-hero img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:20px;
+}
+
+/* ======================
+   INTRO CARD
+====================== */
+
+.intro-card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(8px);
+    color:white;
+    padding:50px;
+    border-radius:25px;
+    margin-bottom:60px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+.intro-card h1{
+    font-size:3.2rem;
+    margin-bottom:20px;
+}
+
+.intro-card p{
+    font-size:1.1rem;
+    line-height:1.9;
+}
+
+/* ======================
+   INFO SECTION
+====================== */
+
+.info-section{
+    margin-bottom:70px;
+}
+
+.info-section h2{
+    font-size:2.2rem;
+    margin-bottom:25px;
+    color:#b7ffce;
+}
+
+.info-section p{
+    font-size:1.05rem;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.info-section img{
+    width:80%;
+    max-width:900px;
+    display:block;
+    margin:35px auto;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.35);
+}
+
+/* ======================
+   QUICK FACTS TABLE
+====================== */
+
+.facts-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:#124734;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.facts-table th{
+    background:#1d5c43;
+    padding:20px;
+    text-align:left;
+    font-size:1.1rem;
+}
+
+.facts-table td{
+    padding:18px;
+    border-top:1px solid rgba(255,255,255,0.08);
+    font-size:1rem;
+}
+
+/* ======================
+   MOBILE RESPONSIVE
+====================== */
+
+@media(max-width:900px){
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .logo{
+        font-size:1.7rem;
+    }
+
+    .nav-links{
+        gap:20px;
+        margin-right:20px;
+    }
+
+    .hero-content{
+        padding:35px;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .page-heading{
+        font-size:2.6rem;
+    }
+
+    .intro-card h1{
+        font-size:2.2rem;
+    }
+
+    .card-grid{
+        grid-template-columns:1fr;
+    }
+
+    .animal-hero img{
+        height:300px;
+    }
+
+    .info-section img{
+        width:100%;
+    }
+
+}
+
+=========================
+   ANIMAL PAGE FINAL FIXES
+========================= */
+
+/* ZOOM OUT HERO IMAGES */
+
+.animal-hero img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    object-position:center center;
+}
+
+/* HERO SECTION */
+
+/* =========================
+   CINEMATIC HERO SECTION
+========================= */
+
+.animal-hero{
+
+    position:relative;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+/* FULL BACKGROUND IMAGE */
+
+.animal-hero img{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    z-index:-2;
+
+    filter:brightness(0.65);
+}
+
+/* DARK OVERLAY */
+
+.animal-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.25);
+
+    z-index:-1;
+}
+
+/* SMALL GLASS CARD */
+
+.hero-overlay{
+
+    background:rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(10px);
+
+    padding:25px 40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:white;
+
+    width:auto;
+
+    max-width:500px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* TITLE */
+
+.hero-overlay h1{
+
+    font-size:64px;
+
+    margin-bottom:10px;
+}
+
+/* SUBTITLE */
+
+.hero-overlay p{
+
+    font-size:24px;
+
+    opacity:0.95;
+}
+
+/* CONTENT COMES AFTER HERO */
+
+.animal-content{
+
+    position:relative;
+
+    background:#02261f;
+
+    padding:80px 8%;
+
+    z-index:5;
+}
+/* =========================
+   HERO IMAGE FINAL FIX
+========================= */
+
+/* DEFAULT HERO IMAGE */
+
+.animal-hero img{
+
+    width:100%;
+
+    height:100vh;
+
+    object-fit:cover;
+
+    object-position:center center;
+}
+
+/* ELEPHANT FIX */
+
+.elephant-page .animal-hero img{
+
+    object-fit:contain;
+
+    background:#021f19;
+}
+
+/* RHINO FIX */
+
+.rhino-page .animal-hero img{
+
+    object-fit:contain;
+
+    background:#021f19;
+}
+
+/* TURTLE FIX */
+
+.turtle-page .animal-hero img{
+
+    object-fit:contain;
+
+    background:#021f19;
+}
+
+/* SMALL SUBTLE CARD */
+
+.hero-overlay{
+
+    position:absolute;
+
+    bottom:60px;
+
+    left:60px;
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(8px);
+
+    padding:18px 28px;
+
+    border-radius:18px;
+
+    width:auto;
+
+    max-width:380px;
+
+    text-align:left;
+}
+
+/* SMALLER TITLE */
+
+.hero-overlay h1{
+
+    font-size:52px;
+
+    margin-bottom:8px;
+}
+
+/* SMALLER SUBTITLE */
+
+.hero-overlay p{
+
+    font-size:20px;
+
+    opacity:0.9;
+}
+/* =========================
+   FINAL IMAGE SIZE FIXES
+========================= */
+
+/* WHALE ANATOMY IMAGE */
+
+.whale-page .diagram-section img{
+
+    width:65%;
+
+    max-width:850px;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* WHALE EXTRA IMAGE */
+
+.whale-page .extra-image img{
+
+    width:60%;
+
+    max-width:800px;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* RHINO EXTRA IMAGE */
+
+.rhino-page .extra-image img{
+
+    width:60%;
+
+    max-width:800px;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* ELEPHANT ANATOMY IMAGE */
+
+.elephant-page .diagram-section img{
+
+    width:65%;
+
+    max-width:850px;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* ELEPHANT GROUP IMAGE */
+
+.elephant-page .extra-image img{
+
+    width:60%;
+
+    max-width:800px;
+
+    display:block;
+
+    margin:auto;
+}
+/* TURTLE IMAGE FIXES */
+
+.turtle-page .diagram-section img{
+
+    width:65%;
+
+    max-width:850px;
+
+    display:block;
+
+    margin:auto;
+}
+
+.turtle-page .extra-image img{
+
+    width:60%;
+
+    max-width:800px;
+
+    display:block;
+
+    margin:auto;
+}
+/* =========================
+   CUSTOM ANIMAL BACKGROUNDS
+========================= */
+
+/* LION */
+
+.lion-page .animal-content{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('images/backgrounds/jungle3.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+
+/* ELEPHANT */
+
+.elephant-page .animal-content{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('images/backgrounds/jungle2.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+
+/* RHINO */
+
+.rhino-page .animal-content{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('images/backgrounds/jungle1.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+
+/* TURTLE */
+
+.turtle-page .animal-content{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.50),
+    rgba(0,0,0,0.50)),
+    url('images/backgrounds/ocean3.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+
+/* WHALE */
+
+.whale-page .animal-content{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.50),
+    rgba(0,0,0,0.50)),
+    url('images/backgrounds/ocean1.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+/* SMALLER QUICK FACTS TABLE */
+
+.facts-table{
+    width:auto;
+    min-width:500px;
+    margin:40px auto;
+}
+
+.facts-table th,
+.facts-table td{
+    padding:16px 24px;
+}
+/* TABLE LINES */
+
+.facts-table th,
+.facts-table td{
+    border:1px solid rgba(255,255,255,0.15);
+}
+/* FAQ SECTION */
+
+.faq-section{
+
+    width:80%;
+
+    margin:100px auto;
+
+    padding:40px;
+
+    background:rgba(0,0,0,0.45);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(6px);
+}
+
+.faq-section h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+    color:white;
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    text-align:left;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.faq-question:hover{
+
+    color:#9fffc7;
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height 0.4s ease;
+}
+
+.faq-answer p{
+
+    padding:0 20px 20px;
+
+    color:white;
+
+    line-height:1.8;
+}
+/* FOOTER */
+
+.footer{
+
+    background:rgba(0,0,0,0.6);
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    margin-top:100px;
+
+    backdrop-filter:blur(6px);
+}
+
+.footer-content h2{
+
+    font-size:42px;
+
+    color:#9fffc7;
+
+    margin-bottom:20px;
+}
+
+.footer-content p{
+
+    color:white;
+
+    max-width:700px;
+
+    margin:0 auto 30px;
+
+    line-height:1.8;
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-bottom:30px;
+
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+
+    color:#9fffc7;
+}
+
+.footer-copy{
+
+    opacity:0.7;
+}
+/* MOBILE MENU */
+
+.menu-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    cursor:pointer;
+
+    gap:6px;
+}
+
+.menu-toggle span{
+
+    width:28px;
+
+    height:3px;
+
+    background:white;
+
+    border-radius:5px;
+
+    transition:0.3s;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:flex;
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:80px;
+
+        right:0;
+
+        background:rgba(0,0,0,0.9);
+
+        width:220px;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:30px 0;
+
+        gap:25px;
+
+        border-radius:0 0 0 20px;
+
+        display:none;
+    }
+
+    .nav-links.active{
+
+        display:flex;
+    }
+}
+/* SLIDESHOW */
+
+.slideshow-section{
+
+    padding:80px 20px;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.slideshow-container{
+
+    position:relative;
+
+    width:90%;
+
+    max-width:1000px;
+
+    height:500px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.slide{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    opacity:0;
+
+    transition:opacity 1s ease-in-out;
+}
+
+.slide.active{
+
+    opacity:1;
+}
+.parallax-section{
+
+    height:500px;
+
+    background-image:url("images/animals/deer.jpg");
+
+    background-attachment:fixed;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.parallax-content{
+
+    background:rgba(0,0,0,0.6);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    max-width:700px;
+}
+
+.parallax-content h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+    color:#4ade80;
+}
+
+.parallax-content p{
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+}
+/* HOVER ANIMATIONS */
+
+.animal-card{
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.animal-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.hero-btn,
+.card-btn{
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover,
+.card-btn:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.nav-links a{
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: #4ade80;
+}
+/* FADE IN ANIMATION */
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* MOBILE RESPONSIVE DESIGN */
+
+@media(max-width: 768px){
+
+    .hero-content h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .slideshow-container{
+        height: 250px;
+    }
+
+    .parallax-content{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .faq-section{
+        padding: 40px 20px;
+    }
+
+    .footer{
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
