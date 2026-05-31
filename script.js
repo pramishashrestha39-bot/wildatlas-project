@@ -82,4 +82,4 @@ function showSlide(){
     slides[currentSlide].classList.add("active");
 }
 
-setInterval(showSlide, 3000);
+setInterval(showSlide, 2000);
